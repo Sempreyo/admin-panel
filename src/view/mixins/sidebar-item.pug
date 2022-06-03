@@ -1,0 +1,23 @@
+mixin sidebar-item(arr, text, url, svg, w, h, counter)
+	.sidebar-item
+		if arr
+			.sidebar-item__link
+				.sidebar-item__icon
+					if svg
+						+icon(svg)(width=w, height=h)
+						if counter
+							span.sidebar-item__counter.sidebar-item__counter--active.sidebar-item__counter--corner= counter
+				span.sidebar-item__text!= text
+				span.sidebar-item__expand
+			.sidebar-item__menu
+				each item in arr
+					a(href=item.url)
+						span!= item.text
+						if item.counter
+							span.sidebar-item__counter(class=item.notice ? 'sidebar-item__counter--active' : '')= item.counter
+		else
+			a.sidebar-item__link(href=url)
+				.sidebar-item__icon
+					if svg
+						+icon(svg)(width=w, height=h)
+				span.sidebar-item__text!= text

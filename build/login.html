@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="css/main.min.css" rel="stylesheet" type="text/css">
+    <title>Register</title>
+  </head>
+  <body>
+    <header class="header header--unauthorized">
+      <div class="header__left"><a class="header__logo" href="#" target="_blank">
+          <svg width="34" height="47">
+            <use xlink:href="./images/sprite.svg#logo"></use>
+          </svg><span>Hudai</span></a>
+        <div class="header__burger"><span></span></div>
+      </div>
+      <div class="header__right">
+        <div class="header__nav-btn">
+          <svg width="30" height="30">
+            <use xlink:href="./images/sprite.svg#lupa"></use>
+          </svg>
+        </div>
+        <div class="header__nav-btn header__nav-btn--notification">
+          <div class="header__nav-btn-icon">
+            <svg width="27" height="30">
+              <use xlink:href="./images/sprite.svg#bell"></use>
+            </svg>
+            <div class="header__notification-num">7</div>
+          </div>
+        </div>
+        <div class="header__profile mini-profile">
+          <div class="mini-profile__photo"><img src="images/avatar.png" alt="avatar"></div>
+          <div class="mini-profile__info">
+            <div class="mini-profile__name">joy dutta</div>
+            <div class="mini-profile__position">Administrator</div>
+          </div>
+          <div class="mini-profile__expand">
+            <svg width="24" height="24">
+              <use xlink:href="./images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="form">
+        <form class="js-form-validate" action="" method="POST">
+          <div class="form__row">
+            <label class="field form__field">
+              <input type="text" name="firstName" placeholder="Your Name" required><span class="field__hint">Your Name</span><span class="field__underline"></span>
+              <div class="field-error"></div>
+            </label>
+            <label class="field form__field">
+              <input type="email" name="email" placeholder="Email" required><span class="field__hint">Email</span><span class="field__underline"></span>
+              <div class="field-error"></div>
+            </label>
+          </div>
+          <div class="form__row">
+            <label class="field form__field">
+              <input type="date" name="birthdate" placeholder="Date of birth"><span class="field__hint">Date of birth</span><span class="field__underline"></span>
+              <div class="field-error"></div>
+            </label>
+            <label class="field form__field">
+              <input type="tel" name="phone" placeholder="Phone number"><span class="field__hint">Phone number</span><span class="field__underline"></span>
+              <div class="field-error"></div>
+            </label>
+          </div>
+          <label class="field form__field form__field--textarea">
+            <textarea name="object" placeholder="Object"></textarea><span class="field__hint">Object</span><span class="field__underline"></span>
+            <div class="field-error"></div>
+          </label>
+          <select class="js-select-place field">
+            <option></option>
+            <option>New York</option>
+            <option>Los Angeles</option>
+            <option>Chicago</option>
+            <option>Houston</option>
+            <option>Phoenix</option>
+            <option>Philadelphia</option>
+            <option>San Antonio</option>
+            <option>San Diego</option>
+            <option>Dallas</option>
+            <option>San Jose</option>
+          </select>
+          <select class="js-select-gender field">
+            <option></option>
+            <option>Male</option>
+            <option>Female</option>
+          </select>
+          <button class="form__submit" type="submit">Register</button>
+        </form>
+      </div>
+    </main>
+  </body>
+  <script type="module" src="js/main.min.js"></script>
+</html>

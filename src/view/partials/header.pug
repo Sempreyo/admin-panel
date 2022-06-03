@@ -1,0 +1,22 @@
+header.header(class= headerClass ? headerClass : '')
+	.header__left
+		a.header__logo(href='#', target='_blank')
+			+icon('logo')(width='34', height='47')
+			span Hudai
+		.header__burger
+			span
+	.header__right
+		.header__nav-btn
+			+icon('lupa')(width='30', height='30')
+		.header__nav-btn.header__nav-btn--notification
+			.header__nav-btn-icon
+				+icon('bell')(width='27', height='30')
+				.header__notification-num 7
+		.header__profile.mini-profile
+			.mini-profile__photo
+				img(src='images/avatar.png', alt='avatar')
+			.mini-profile__info
+				.mini-profile__name joy dutta
+				.mini-profile__position Administrator
+			.mini-profile__expand
+				+icon('chevron')(width='24', height='24')

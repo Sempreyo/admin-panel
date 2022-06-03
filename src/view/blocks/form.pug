@@ -1,0 +1,26 @@
+.form
+	form.js-form-validate(action='', method='POST')
+		.form__row
+			+field('input', 'text', 'firstName', 'form__field', 'Your Name')(required = true)
+			+field('input', 'email', 'email', 'form__field', 'Email')(required = true)
+		.form__row
+			+field('input', 'date', 'birthdate', 'form__field', 'Date of birth')
+			+field('input', 'tel', 'phone', 'form__field', 'Phone number')
+		+field('textarea', 'text', 'object', 'form__field form__field--textarea', 'Object')
+		select.js-select-place.field
+			option
+			option New York
+			option Los Angeles
+			option Chicago
+			option Houston
+			option Phoenix
+			option Philadelphia
+			option San Antonio
+			option San Diego
+			option Dallas
+			option San Jose
+		select.js-select-gender.field
+			option
+			option Male
+			option Female
+		button.form__submit(type='submit') Register

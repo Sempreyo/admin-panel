@@ -1,0 +1,22 @@
+.diag {
+	padding: 50px 0;
+
+	@include max(md) {
+		padding: 20px 0;
+	}
+
+	&__block {
+		&:not(:last-child) {
+			margin-bottom: 20px;
+			padding-bottom: 15px;
+			border-bottom: 1px solid $gray-57;
+		}
+	}
+
+	&__title {
+		font-size: 30px;
+		color: $white;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+}

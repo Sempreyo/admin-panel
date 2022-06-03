@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="css/main.min.css" rel="stylesheet" type="text/css">
+    <title>Admin-panel</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__left"><a class="header__logo" href="#" target="_blank">
+          <svg width="34" height="47">
+            <use xlink:href="./images/sprite.svg#logo"></use>
+          </svg><span>Hudai</span></a>
+        <div class="header__burger"><span></span></div>
+      </div>
+      <div class="header__right">
+        <div class="header__nav-btn">
+          <svg width="30" height="30">
+            <use xlink:href="./images/sprite.svg#lupa"></use>
+          </svg>
+        </div>
+        <div class="header__nav-btn header__nav-btn--notification">
+          <div class="header__nav-btn-icon">
+            <svg width="27" height="30">
+              <use xlink:href="./images/sprite.svg#bell"></use>
+            </svg>
+            <div class="header__notification-num">7</div>
+          </div>
+        </div>
+        <div class="header__profile mini-profile">
+          <div class="mini-profile__photo"><img src="images/avatar.png" alt="avatar"></div>
+          <div class="mini-profile__info">
+            <div class="mini-profile__name">joy dutta</div>
+            <div class="mini-profile__position">Administrator</div>
+          </div>
+          <div class="mini-profile__expand">
+            <svg width="24" height="24">
+              <use xlink:href="./images/sprite.svg#chevron"></use>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="sidebar">
+        <div class="sidebar-item"><a class="sidebar-item__link" href="#">
+            <div class="sidebar-item__icon">
+              <svg width="27" height="30">
+                <use xlink:href="./images/sprite.svg#bell"></use>
+              </svg>
+            </div><span class="sidebar-item__text">Dashboard</span></a>
+        </div>
+        <div class="sidebar-item">
+          <div class="sidebar-item__link">
+            <div class="sidebar-item__icon">
+              <svg width="32" height="26">
+                <use xlink:href="./images/sprite.svg#letter"></use>
+              </svg><span class="sidebar-item__counter sidebar-item__counter--active sidebar-item__counter--corner">3</span>
+            </div><span class="sidebar-item__text">Messages</span><span class="sidebar-item__expand"></span>
+          </div>
+          <div class="sidebar-item__menu"><a href="#"><span>Compose</span></a><a href="#"><span>Inbox</span><span class="sidebar-item__counter sidebar-item__counter--active">3</span></a><a href="#"><span>Draft</span><span class="sidebar-item__counter">2</span></a><a href="#"><span>Sentbox</span><span class="sidebar-item__counter">9</span></a>
+          </div>
+        </div>
+        <div class="sidebar-item"><a class="sidebar-item__link" href="#">
+            <div class="sidebar-item__icon">
+              <svg width="32" height="32">
+                <use xlink:href="./images/sprite.svg#compass"></use>
+              </svg>
+            </div><span class="sidebar-item__text">Overview</span></a>
+        </div>
+        <div class="sidebar-item"><a class="sidebar-item__link" href="#">
+            <div class="sidebar-item__icon">
+              <svg width="32" height="32">
+                <use xlink:href="./images/sprite.svg#stats"></use>
+              </svg>
+            </div><span class="sidebar-item__text">Statistic</span></a>
+        </div>
+        <div class="sidebar-item"><a class="sidebar-item__link" href="#">
+            <div class="sidebar-item__icon">
+              <svg width="24" height="32">
+                <use xlink:href="./images/sprite.svg#document"></use>
+              </svg>
+            </div><span class="sidebar-item__text">Invoice</span></a>
+        </div>
+        <div class="sidebar-item"><a class="sidebar-item__link" href="#">
+            <div class="sidebar-item__icon">
+            </div><span class="sidebar-item__text">My Ads</span></a>
+        </div>
+        <div class="sidebar-item"><a class="sidebar-item__link" href="#">
+            <div class="sidebar-item__icon">
+              <svg width="34" height="34">
+                <use xlink:href="./images/sprite.svg#calendar"></use>
+              </svg>
+            </div><span class="sidebar-item__text">Calendar</span></a>
+        </div>
+        <div class="sidebar-item"><a class="sidebar-item__link" href="#">
+            <div class="sidebar-item__icon">
+              <svg width="32" height="32">
+                <use xlink:href="./images/sprite.svg#star"></use>
+              </svg>
+            </div><span class="sidebar-item__text">Feedback</span></a>
+        </div>
+        <div class="sidebar-item"><a class="sidebar-item__link" href="#">
+            <div class="sidebar-item__icon">
+              <svg width="24" height="32">
+                <use xlink:href="./images/sprite.svg#notepad"></use>
+              </svg>
+            </div><span class="sidebar-item__text">Statement</span></a>
+        </div>
+        <div class="sidebar-item"><a class="sidebar-item__link" href="#">
+            <div class="sidebar-item__icon">
+              <svg width="32" height="32">
+                <use xlink:href="./images/sprite.svg#settings"></use>
+              </svg>
+            </div><span class="sidebar-item__text">Settings</span></a>
+        </div>
+      </div>
+      <section class="diag">
+        <div class="container">
+          <div class="diag__block">
+            <div class="diag__title">Диаграмма 1</div>
+            <canvas id="myChart1"></canvas>
+          </div>
+          <div class="diag__block">
+            <div class="diag__title">Диаграмма 2</div>
+            <canvas id="myChart2"></canvas>
+          </div>
+          <div class="diag__block">
+            <div class="diag__title">Микс диаграмм 1 и 2</div>
+            <canvas id="myChart3"></canvas>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script type="module" src="js/main.min.js"></script>
+</html>

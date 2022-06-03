@@ -1,0 +1,65 @@
+.form {
+	$parent: &;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 100px 15px 30px;
+
+	form {
+		max-width: 500px;
+		width: 100%;
+		margin: 0 auto 77px;
+		padding: 35px 20px;
+		border: 1px solid $white;
+		border-radius: 5px;
+	}
+
+	&__field {
+		margin-bottom: 50px;
+	}
+
+	&__row {
+		display: flex;
+		margin: 0 -12px;
+
+		@include max(sm) {
+			flex-direction: column;
+			margin: 0;
+		}
+
+		#{$parent} {
+			&__field {
+				width: calc(50% - 24px);
+				margin: 0 12px 50px;
+
+				@include max(sm) {
+					width: 100%;
+					margin: 0 0 50px;
+				}
+			}
+		}
+	}
+
+	&__submit {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		max-width: 152px;
+		width: 100%;
+		padding: 13px;
+		margin: 0 auto;
+		border-radius: 5px;
+		background-color: $light-green;
+		font-size: 18px;
+		letter-spacing: 0.04em;
+		color: $white;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+
+		@include hover {
+			background-color: rgba($light-green, 0.9);
+		}
+	}
+}

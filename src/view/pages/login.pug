@@ -1,0 +1,11 @@
+extends ../layouts/empty
+
+block vars
+	-
+		const page = {
+			title: 'Register'
+		};
+	- let headerClass = 'header--unauthorized';
+
+block main
+	include ../blocks/form.pug

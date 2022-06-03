@@ -1,0 +1,8 @@
+.sidebar {
+	width: 25%;
+	background-color: $gray-24;
+
+	@include max(md) {
+		display: none;
+	}
+}
